@@ -1,0 +1,33 @@
+[project]
+name = "files-mcp-server"
+version = "0.1.0"
+description = "MCP server: Project Files + Ripgrep Toolkit (search, read, write with checksum, rename, delete, preview refactor)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Paul Greenwood" }]
+dependencies = [
+  "mcp[cli]>=1.2.0",
+  "unidiff>=0.7.5",
+]
+
+[project.scripts]
+files-mcp-server = "files_mcp_server.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["files_mcp_server"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "files_mcp_server",
+  "README.md",
+]
+
+
