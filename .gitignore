@@ -1,0 +1,40 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+*.prof
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+.env
+.env.*
+.envrc
+.python-version
+
+# Editors/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# uv
+# keep uv.lock committed
+# .uv/
